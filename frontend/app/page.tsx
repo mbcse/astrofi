@@ -61,7 +61,7 @@ export default function HomePage() {
           {/* Hero Badge */}
           <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-xl border border-purple-400/30 rounded-full px-6 py-3 mb-8 group hover:scale-105 transition-all duration-300">
             <Blocks className="w-4 h-4 text-gold-400" />
-            <span className="text-sm font-medium text-white">Powered by Blockchain Technology</span>
+            <span className="text-sm font-medium text-white">Powered by Flow Blockchain, Walarus and Privy</span>
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
           </div>
 
