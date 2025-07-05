@@ -89,8 +89,7 @@ export class WalrusStorageService {
       
       console.log('Raw file metadata:', JSON.stringify(fileMeta, null, 2));
       
-      // Tusky doesn't provide direct URLs - files must be accessed through SDK methods
-      // We'll create a URL that points to our Next.js API route that proxies the file
+      
       const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3000';
       const fileUrl = `${frontendUrl}/api/image/${uploadId}`;
       
