@@ -60,10 +60,7 @@ export class WalrusStorageService {
     return this.vaultId
   }
 
-  /**
-   * Upload a file to Walrus storage
-   * Note: This is a simplified implementation using available Tusky SDK methods
-   */
+  
   async uploadFile(
     fileBuffer: Buffer,
     fileName: string,

@@ -79,9 +79,9 @@ export default function HomePage() {
                 </span>
               </h2>
               <p className="text-lg md:text-xl text-white/70 max-w-4xl mx-auto leading-relaxed font-medium">
-                The first blockchain-powered astrology ecosystem. Mint your cosmic identity as NFTs, participate in
-                prediction DAOs, trade astrologer tokens, and join decentralized communities—all secured by the
-                immutable power of Web3.
+              The First Blockchain-Powered Astrology Ecosystem
+Mint your cosmic identity as NFTs, trade astrologer reputation tokens, and participate in prediction markets based on real astrological forecasts.
+Join decentralized zodiac communities—all secured by the trustless power of Web3.
               </p>
             </div>
           </div>
