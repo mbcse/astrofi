@@ -1,0 +1,117 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IReputationScorer",
+  "sourceName": "contracts/interfaces/IReputationScorer.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_astrologer",
+          "type": "address"
+        }
+      ],
+      "name": "getReputationMultiplier",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_astrologer",
+          "type": "address"
+        }
+      ],
+      "name": "getReputationScore",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "astrologer",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "totalPredictions",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "accuratePredictions",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "accuracyPercentage",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reputationMultiplier",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "marketPredictions",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "dailyPredictions",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "oneToOnePredictions",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lastUpdated",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "isActive",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_astrologer",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "_wasCorrect",
+          "type": "bool"
+        }
+      ],
+      "name": "updateReputationFromWorldPrediction",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

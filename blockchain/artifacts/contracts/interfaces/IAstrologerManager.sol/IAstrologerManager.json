@@ -1,0 +1,285 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IAstrologerManager",
+  "sourceName": "contracts/interfaces/IAstrologerManager.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "astrologerId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getAstrologer",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "wallet",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "specialty",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "experience",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "reputation",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalPredictions",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "accuratePredictions",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenContract",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isVerified",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isActive",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "registeredAt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lastActive",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IAstrologerManager.Astrologer",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "wallet",
+          "type": "address"
+        }
+      ],
+      "name": "getAstrologerByWallet",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "wallet",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "specialty",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "experience",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "reputation",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalPredictions",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "accuratePredictions",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenContract",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isVerified",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isActive",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "registeredAt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "lastActive",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IAstrologerManager.Astrologer",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "wallet",
+          "type": "address"
+        }
+      ],
+      "name": "getAstrologerId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "wallet",
+          "type": "address"
+        }
+      ],
+      "name": "isAstrologerVerified",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "astrologerId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "wasAccurate",
+          "type": "bool"
+        }
+      ],
+      "name": "recordPredictionResult",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "astrologerId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenContract",
+          "type": "uint256"
+        }
+      ],
+      "name": "setTokenContract",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "astrologerId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "newReputation",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateReputation",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

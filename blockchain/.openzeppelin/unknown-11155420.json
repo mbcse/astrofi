@@ -1,0 +1,965 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xF6b29cF96471e9bfbBb52623395759CA948f4554",
+      "txHash": "0x0da53db31be3385e607db5ce2cbfd082cb9afc1b77d794b1cfdbd9e457972147",
+      "kind": "uups"
+    },
+    {
+      "address": "0x4a6f39B45D6cCB4b3a99c2a3d833F983B5AF78ee",
+      "txHash": "0x2ec8ad236fd45bf2efdb2352840bfd7e4c0ef5cf13228811f96587e451c52168",
+      "kind": "uups"
+    },
+    {
+      "address": "0xD8B940994e8dB41B5bBD2D0993eFcf2585De98E6",
+      "txHash": "0x80a4eb7b882a07bccb0f8a03c6f4b434e761e318229dc1e1df19d1343c45442a",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "47bb07736e48e02139a2b8c758b046e76c50670d68c633355f151f586c387df9": {
+      "address": "0x89BDF0cC812F7Fb0764333A3A25e548D1cFb68A2",
+      "txHash": "0x3a0d8530af1c0e21ff5c44d136618432e037aee2a64817c048df2010168b4016",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:169"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:111"
+          },
+          {
+            "label": "_scoreIds",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_struct(Counter)3687_storage",
+            "contract": "ReputationScorer",
+            "src": "contracts/ReputationScorer.sol:19"
+          },
+          {
+            "label": "reputationScores",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_mapping(t_address,t_struct(ReputationScore)12201_storage)",
+            "contract": "ReputationScorer",
+            "src": "contracts/ReputationScorer.sol:50"
+          },
+          {
+            "label": "scoreBreakdowns",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_mapping(t_address,t_struct(ScoreBreakdown)12212_storage)",
+            "contract": "ReputationScorer",
+            "src": "contracts/ReputationScorer.sol:51"
+          },
+          {
+            "label": "predictionModules",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_mapping(t_uint256,t_struct(PredictionModule)12221_storage)",
+            "contract": "ReputationScorer",
+            "src": "contracts/ReputationScorer.sol:52"
+          },
+          {
+            "label": "astrologerManager",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_address",
+            "contract": "ReputationScorer",
+            "src": "contracts/ReputationScorer.sol:54"
+          },
+          {
+            "label": "buyTokenContract",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_address",
+            "contract": "ReputationScorer",
+            "src": "contracts/ReputationScorer.sol:55"
+          },
+          {
+            "label": "zodiacDAO",
+            "offset": 0,
+            "slot": "207",
+            "type": "t_address",
+            "contract": "ReputationScorer",
+            "src": "contracts/ReputationScorer.sol:56"
+          },
+          {
+            "label": "astroTokenLauncher",
+            "offset": 0,
+            "slot": "208",
+            "type": "t_address",
+            "contract": "ReputationScorer",
+            "src": "contracts/ReputationScorer.sol:57"
+          },
+          {
+            "label": "totalModules",
+            "offset": 0,
+            "slot": "209",
+            "type": "t_uint256",
+            "contract": "ReputationScorer",
+            "src": "contracts/ReputationScorer.sol:59"
+          },
+          {
+            "label": "minPredictionsForScore",
+            "offset": 0,
+            "slot": "210",
+            "type": "t_uint256",
+            "contract": "ReputationScorer",
+            "src": "contracts/ReputationScorer.sol:60"
+          },
+          {
+            "label": "scoreUpdateDelay",
+            "offset": 0,
+            "slot": "211",
+            "type": "t_uint256",
+            "contract": "ReputationScorer",
+            "src": "contracts/ReputationScorer.sol:61"
+          },
+          {
+            "label": "reputationDecayRate",
+            "offset": 0,
+            "slot": "212",
+            "type": "t_uint256",
+            "contract": "ReputationScorer",
+            "src": "contracts/ReputationScorer.sol:62"
+          },
+          {
+            "label": "maxReputationMultiplier",
+            "offset": 0,
+            "slot": "213",
+            "type": "t_uint256",
+            "contract": "ReputationScorer",
+            "src": "contracts/ReputationScorer.sol:63"
+          },
+          {
+            "label": "minReputationMultiplier",
+            "offset": 0,
+            "slot": "214",
+            "type": "t_uint256",
+            "contract": "ReputationScorer",
+            "src": "contracts/ReputationScorer.sol:64"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_struct(ReputationScore)12201_storage)": {
+            "label": "mapping(address => struct ReputationScorer.ReputationScore)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(ScoreBreakdown)12212_storage)": {
+            "label": "mapping(address => struct ReputationScorer.ScoreBreakdown)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(PredictionModule)12221_storage)": {
+            "label": "mapping(uint256 => struct ReputationScorer.PredictionModule)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Counter)3687_storage": {
+            "label": "struct CountersUpgradeable.Counter",
+            "members": [
+              {
+                "label": "_value",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PredictionModule)12221_storage": {
+            "label": "struct ReputationScorer.PredictionModule",
+            "members": [
+              {
+                "label": "contractAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 20,
+                "slot": "0"
+              },
+              {
+                "label": "weight",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "lastUpdate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(ReputationScore)12201_storage": {
+            "label": "struct ReputationScorer.ReputationScore",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "astrologer",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "totalPredictions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "accuratePredictions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "accuracyPercentage",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "reputationMultiplier",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "marketPredictions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "dailyPredictions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "oneToOnePredictions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "lastUpdated",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "10"
+              }
+            ],
+            "numberOfBytes": "352"
+          },
+          "t_struct(ScoreBreakdown)12212_storage": {
+            "label": "struct ReputationScorer.ScoreBreakdown",
+            "members": [
+              {
+                "label": "marketAccuracy",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "dailyAccuracy",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "oneToOneAccuracy",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "weightedScore",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "reputationTier",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              }
+            ],
+            "numberOfBytes": "160"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "6a0dd816b1f2bc8b32b3eb03d689c041ad1d7ab0f1fe6401bc4d40565dc09a86": {
+      "address": "0xe94B73e6562fe14d3DBC56B8DDEe8fe3876c6af6",
+      "txHash": "0xed002e1fa3fdb21f7ebe1011f91f8707e94a6f0d00c2ea421586c1bc0dacbb21",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:169"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:111"
+          },
+          {
+            "label": "_astrologerIds",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_struct(Counter)3687_storage",
+            "contract": "AstrologerManager",
+            "src": "contracts/AstrologerManager.sol:16"
+          },
+          {
+            "label": "astrologers",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_mapping(t_uint256,t_struct(Astrologer)6651_storage)",
+            "contract": "AstrologerManager",
+            "src": "contracts/AstrologerManager.sol:42"
+          },
+          {
+            "label": "walletToAstrologerId",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "AstrologerManager",
+            "src": "contracts/AstrologerManager.sol:43"
+          },
+          {
+            "label": "astrologerStats",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_mapping(t_uint256,t_struct(AstrologerStats)6660_storage)",
+            "contract": "AstrologerManager",
+            "src": "contracts/AstrologerManager.sol:44"
+          },
+          {
+            "label": "specialtyToAstrologers",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_mapping(t_string_memory_ptr,t_array(t_uint256)dyn_storage)",
+            "contract": "AstrologerManager",
+            "src": "contracts/AstrologerManager.sol:45"
+          },
+          {
+            "label": "reputationScorer",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_address",
+            "contract": "AstrologerManager",
+            "src": "contracts/AstrologerManager.sol:47"
+          },
+          {
+            "label": "predictionCredibilityManager",
+            "offset": 0,
+            "slot": "207",
+            "type": "t_address",
+            "contract": "AstrologerManager",
+            "src": "contracts/AstrologerManager.sol:48"
+          },
+          {
+            "label": "astroTokenLauncher",
+            "offset": 0,
+            "slot": "208",
+            "type": "t_address",
+            "contract": "AstrologerManager",
+            "src": "contracts/AstrologerManager.sol:49"
+          },
+          {
+            "label": "verificationFee",
+            "offset": 0,
+            "slot": "209",
+            "type": "t_uint256",
+            "contract": "AstrologerManager",
+            "src": "contracts/AstrologerManager.sol:51"
+          },
+          {
+            "label": "totalAstrologers",
+            "offset": 0,
+            "slot": "210",
+            "type": "t_uint256",
+            "contract": "AstrologerManager",
+            "src": "contracts/AstrologerManager.sol:52"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(string => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Astrologer)6651_storage)": {
+            "label": "mapping(uint256 => struct AstrologerManager.Astrologer)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(AstrologerStats)6660_storage)": {
+            "label": "mapping(uint256 => struct AstrologerManager.AstrologerStats)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Astrologer)6651_storage": {
+            "label": "struct AstrologerManager.Astrologer",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "wallet",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "description",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "specialty",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "experience",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "reputation",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "totalPredictions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "accuratePredictions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "tokenContract",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "isVerified",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "10"
+              },
+              {
+                "label": "registeredAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "lastActive",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "12"
+              }
+            ],
+            "numberOfBytes": "416"
+          },
+          "t_struct(AstrologerStats)6660_storage": {
+            "label": "struct AstrologerManager.AstrologerStats",
+            "members": [
+              {
+                "label": "totalSessions",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "totalEarnings",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "averageRating",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "totalReviews",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(Counter)3687_storage": {
+            "label": "struct CountersUpgradeable.Counter",
+            "members": [
+              {
+                "label": "_value",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "c4f7c0414558991dde51a4de1b86e93915a9740889b8868498da02cbe7fdb120": {
+      "address": "0x5253469Bd4f16A70B9b86aE0fF51Bb3369E51952",
+      "txHash": "0xfc98b63bf3aa52d10d2f2942377c705424f78b6d352c7301f6933f161356de2c",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:169"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:111"
+          },
+          {
+            "label": "tokenInfos",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_mapping(t_address,t_struct(TokenInfo)7516_storage)",
+            "contract": "BuyTokenContract",
+            "src": "contracts/BuyTokenContract.sol:35"
+          },
+          {
+            "label": "userBalances",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "BuyTokenContract",
+            "src": "contracts/BuyTokenContract.sol:36"
+          },
+          {
+            "label": "userContributions",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "BuyTokenContract",
+            "src": "contracts/BuyTokenContract.sol:37"
+          },
+          {
+            "label": "astrologerManager",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_address",
+            "contract": "BuyTokenContract",
+            "src": "contracts/BuyTokenContract.sol:39"
+          },
+          {
+            "label": "predictionCredibilityManager",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_address",
+            "contract": "BuyTokenContract",
+            "src": "contracts/BuyTokenContract.sol:40"
+          },
+          {
+            "label": "bondingCurve",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_struct(BondingCurve)7525_storage",
+            "contract": "BuyTokenContract",
+            "src": "contracts/BuyTokenContract.sol:42"
+          },
+          {
+            "label": "platformFee",
+            "offset": 0,
+            "slot": "210",
+            "type": "t_uint256",
+            "contract": "BuyTokenContract",
+            "src": "contracts/BuyTokenContract.sol:43"
+          },
+          {
+            "label": "totalVolume",
+            "offset": 0,
+            "slot": "211",
+            "type": "t_uint256",
+            "contract": "BuyTokenContract",
+            "src": "contracts/BuyTokenContract.sol:44"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_struct(TokenInfo)7516_storage)": {
+            "label": "mapping(address => struct BuyTokenContract.TokenInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(BondingCurve)7525_storage": {
+            "label": "struct BuyTokenContract.BondingCurve",
+            "members": [
+              {
+                "label": "k",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "reserveRatio",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "slippageTolerance",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "maxReputationMultiplier",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(TokenInfo)7516_storage": {
+            "label": "struct BuyTokenContract.TokenInfo",
+            "members": [
+              {
+                "label": "tokenContract",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "astrologer",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "totalSupply",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "circulatingSupply",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "basePrice",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "credibilityMultiplier",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "6"
+              }
+            ],
+            "numberOfBytes": "224"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "SafeERC20Upgradeable",
+  "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea264697066735822122031e68ab1984adc4505889fb8c53c07a8dceb8cabb76b06700c2e5c03ed7dabb964736f6c63430008110033",
+  "deployedBytecode": "0x600080fdfea264697066735822122031e68ab1984adc4505889fb8c53c07a8dceb8cabb76b06700c2e5c03ed7dabb964736f6c63430008110033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
