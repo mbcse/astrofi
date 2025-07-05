@@ -1,0 +1,4 @@
+exit
+;
+npx hardhat run scripts/checkOwnership.js --network 545
+q
